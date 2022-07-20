@@ -1,0 +1,73 @@
+/* Mobile */
+
+@media (max-width: 740px) {
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: rgb(60, 60, 60);
+    }
+
+    #nav .subnav a {
+        display: block;
+        padding: 0 42px;
+        color: white;
+    }
+
+    #header {
+        height: auto;
+        overflow: hidden;
+    }
+
+    #header #search--btn {
+        display: none;
+    }
+
+    #header #menu-mobile-btn {
+        display: block;
+    }
+
+    #content .member-item,
+    #content .place-item {
+        float: none;
+        width: 100%;
+    }
+
+    #content .tour-section {
+        height: auto;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-section .contact-info,
+    .contact-section .contact-form {
+        width: 100%;
+    }
+
+    .contact-name,
+    .contact-email {
+        width: 100%;
+    }
+
+    .contact-name {
+        margin-right: 0;
+        margin: 32px 0 8px 0;
+    }
+}
+/* Table & PC */
+
+@media (min-width: 820px) {
+}

@@ -1,0 +1,504 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Common */
+
+/* Header */
+#header {
+    height: 46px;;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+    list-style: none;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+    padding: 0 24px;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+}
+
+#nav .chevron--down {
+    display: inline-block;
+    top: 4px;
+    left: -4px;
+}
+
+#nav > li:hover > a,
+.subnav > li:hover > a {
+    background-color: gray;
+    color: black;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+.subnav li a {
+    color: black;
+    padding-left: 16px;
+    padding-right: 48px;
+}
+
+#header #search--btn,
+#header #menu-mobile-btn {
+    color: white;
+    float: right;
+    height: 46px;
+    width: 54px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header #search--btn:hover {
+    background-color: red;
+    color: black;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#header #menu-mobile-btn {
+    display: none;
+}
+
+#header #menu-mobile-btn:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+#header #search--btn .search--btn__icon {
+    top: 16px;
+    right: -24px;
+}
+
+#header #menu-mobile-btn .menu-mobile-btn__icon {
+    top: 22px;
+    right: -12px;
+}
+/* Header */
+
+/* Slider */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/IMAGE/theband.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    padding: 32px 16px;
+    left: 0;
+    right: 0;
+}
+/* Slider */
+
+/* Content */
+    /* About */
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+.content-section .section-heading {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+
+.content-section .section-sub-heading {
+    margin: 15px 0;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.content-section .about-text {
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+#content .member-list {
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+#content .member-name {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+    /* About */
+
+    /* Tour */
+#content .tour-section {
+    background-color: black;
+    height: 847px;
+}
+
+#content .tour-section h2,
+#content .tour-section p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.tickets-list {
+    background-color: white;
+    list-style: none;
+    font-size: 15px
+}
+
+.tickets-list .ticket-date {
+    padding: 8px 16px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: gray;
+}
+
+.tickets-list .sold-out {
+    margin-left: 16px;
+    padding: 0 8px;
+    background-color: red;
+    color: white;
+}
+
+.tickets-list .quantity {
+    margin-right: 16px;
+    padding: 0 8px;
+    background-color: black;
+    color: white;
+    float: right;
+    border-radius: 45%;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    line-height: 22px;
+}
+    /* Tour */
+
+    /* Place */
+.place-list {
+    padding: 32px 8px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: white;
+    padding: 16px;
+}
+.place-body h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-body .place-date,
+.place-body .place-desc {
+    margin: 15px 0;
+}
+
+.place-body .place-buy-btn {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+.place-body .place-buy-btn:hover {
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
+    /* Place */
+    /* Contact */
+
+.contact-section {
+    padding: 32px 0;
+}    
+
+.contact-section .contact-info,
+.contact-section .contact-form {
+    width: 50%;
+    float: left;
+}
+
+.contact-name,
+.contact-email,
+.contact-mess {
+    padding: 10px 8px;
+}
+
+.contact-name {
+    margin-right: 14px;
+}
+
+.contact-mess {
+    margin-top: 8px;
+    width: 100%;
+}
+
+.contact-send-btn {
+    float: right;
+    margin: 16px 0;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 40px;
+}
+
+.contact-send-btn:hover {
+    background-color: gainsboro;
+    color: black;
+    cursor: pointer;
+}
+
+.contact-section p {
+    font-size: 18px;
+}
+
+.contact-icon {
+    float: left;
+    margin-right: 16px;
+}
+
+    /* Contact */
+.content-map .map {
+    max-width: 100%;
+    margin: 64px 0;
+    background: center;
+}
+/* Content */
+
+/* Footer */
+
+.content-map .map {
+    width: 100%;
+    margin: 64px 0;
+}
+
+#footer {
+    padding-bottom: 64px;
+}
+
+#footer .social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 16px 4px;
+    color: gray;
+}
+
+.social-icon:hover,
+#footer p > a:hover {
+    opacity: 0.6;
+}
+
+
+#footer p {
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+}
+/* Footer */
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: white;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    box-shadow: 0 0 10px grey;
+    animation: modalFadeIn ease 0.4s;
+}
+
+.modal-close {
+    color: white;
+    position: absolute;
+    padding: 16px;
+    z-index: 1;
+}
+
+.modal-close:hover {
+    background-color: rgb(188, 188, 188);
+    color: black;
+}
+
+.modal-header {
+    font-size: 30px;
+    height: 130px;
+    background-color: #009688;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gg-shopping-bag {
+    right: 15px;
+}
+
+.modal-body {
+    padding: 0 16px;
+}
+
+
+.modal-label,
+#buy-ticket,
+.modal-footer {
+    display: flex;
+    margin: 16px 0 10px 0;
+}
+
+.gg-shopping-cart,
+.gg-profile {
+    margin-right: 5px;
+    bottom: 4px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+}
+
+#buy-ticket {
+    font-size: 15px;
+    height: 54px;
+    width: 100%;
+    background-color: #009688;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+#buy-ticket:hover {
+    background-color: gainsboro;
+    color: black;
+    cursor: pointer;;
+}
+
+.modal-footer {
+    flex-direction: row-reverse;
+    margin-right: 16px;
+}
+
+.modal-footer > p > a {
+    color: mediumaquamarine;
+}
+/* Modal */
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
